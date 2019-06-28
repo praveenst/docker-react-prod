@@ -6,4 +6,4 @@ before_install:
   - docker build -t praveenst/docker-react-prod -f Dockerfile.dev .
 
 script:
-  - docker run praveenst/docker-react-prod npm run test -- --coverage
+  - docker run praveenst/docker-react-prod npm run test -- --coverage --watchAll=false
